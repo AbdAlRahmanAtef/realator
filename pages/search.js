@@ -6,7 +6,7 @@ import SearchFilters from "../components/SearchFilters";
 import Image from "next/image";
 import ops from "../assets/images/ops.svg";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
-import Property from "../components/Property";
+import Property from "../components/PropertyC";
 
 const Search = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState(false);

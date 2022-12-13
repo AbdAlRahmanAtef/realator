@@ -124,9 +124,7 @@ const PropertyDetails = ({
   </Box>
 );
 
-export default PropertyDetails;
-
-export async function getServerSideProps({ url }) {
+export async function getServerSideProps({ params: { id } }) {
   const data = await fetchApi(`${baseUrl}/properties/detail?externalID=${id}`);
 
   return {
@@ -135,3 +133,5 @@ export async function getServerSideProps({ url }) {
     },
   };
 }
+
+export default PropertyDetails;
