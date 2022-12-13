@@ -3,10 +3,10 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { BsFilter } from "react-icons/bs";
 import SearchFilters from "../components/SearchFilters";
-import Property from "../components/Property";
 import Image from "next/image";
 import ops from "../assets/images/ops.svg";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
+import Property from "../components/Property";
 
 const Search = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState(false);
@@ -33,7 +33,7 @@ const Search = ({ properties }) => {
       <Text fontSize="2xl" p="4" fontWeight="bold">
         Properties {router.query.purpose}
       </Text>
-      <Flex flexWrap="wrap" justifyContent='center'>
+      <Flex flexWrap="wrap" justifyContent="center">
         {properties.map((property) => (
           <Property property={property} key={property.id} />
         ))}
