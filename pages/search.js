@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { BsFilter } from "react-icons/bs";
 import SearchFilters from "../components/SearchFilters";
-import Property from "../components/property";
+import Property from "../components/Property";
 import Image from "next/image";
 import ops from "../assets/images/ops.svg";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
